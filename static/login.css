@@ -1,0 +1,81 @@
+/* Old Money Theme */
+:root {
+    --dark-green: #1e3b2d; /* Deep forest green */
+    --light-green: #e8f5e9; /* Soft mint */
+    --cream: #f5f5dc; /* Antique cream */
+    --gold: #c5a880; /* Muted gold */
+    --text-dark: #333333; /* Dark gray for text */
+    --text-light: #f5f5f5; /* Light text for dark backgrounds */
+}
+
+/* Typography */
+body {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-dark);
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green);
+    color: var(--text-light);
+}
+
+.bg-light-green {
+    background-color: var(--light-green);
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--text-dark);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: darken(var(--gold), 10%);
+}
+
+/* Input Fields */
+.form-control {
+    background-color: var(--light-green);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: var(--text-dark);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: var(--light-green);
+}
+
+/* Links */
+.text-gold {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.text-gold:hover {
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+}
