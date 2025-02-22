@@ -14,7 +14,7 @@ A sophisticated chat application powered by **Qwen 2.5**, designed for seamless 
 - **User Authentication**: Login and register functionality with session management.
 - **Responsive Design**: Works seamlessly on desktop and mobile devices.
 
----
+
 
 ## Prerequisites
 
