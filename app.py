@@ -3,13 +3,15 @@ import requests
 import sqlite3
 import uuid
 from datetime import timedelta
+from dotenv import load_dotenv
 
+load_dotenv()
 app = Flask(__name__)
 app.secret_key = "2938dhjdbskjfksjdhfsjdf"
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=1)
 
 # API Configuration
-API_KEY = "sk-1045e376ac5a444ab0cb458f2e7d1d1f"
+API_KEY = os.getenv("QWEN_API_KEY")
 QWEN_API_URL = "https://dashscope-intl.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
 
 # Database Configuration
